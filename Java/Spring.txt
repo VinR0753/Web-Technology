@@ -1,0 +1,79 @@
+Spring Framework
+    Framework
+        It is a set of pre defined code or methods which provides base or structure to develop application i.e instead of starting from scratch it provides us a platform to build software
+
+    Spring Framework
+        Spring is a light weight powerful java framework used to develop enterprise application
+
+    History
+        By Rod Johnson in 2003 - Vmware
+
+    Features of Spring
+        It is a lightweight powerful java framework used to develop enterprise application
+        Supports POJO classes - doesn't force to inherit from any classes or interface
+        It is called framework of frameworks - it uses existing frameworks - provides shortcuts for already existing frameworks
+        It is developer friendly
+        It supports Aspect oriented programming - solves cross-cutting programming
+        It provides dependency injection which helps to achieve loose coupling
+        It supports model
+
+Spring Core/Spring IOC (Inversion of Control)
+    Inversion of Control
+        THe process of transferring the control of life cycle management of an object to a framework
+
+    IOC Container
+     there are two types of container
+        Core container
+        Advanced/EJB(Enterprise java bean) container   
+
+                            Bean Factory i
+
+                xml bean factory c              Application context i
+                
+                                 ClassPath xml c FileSystem xml c ApplicationConfig c
+
+Bean
+    It is object which is created by spring
+
+Bean attributes
+    lazy loading - object will be created when we call or invoke
+    eager loading - object will be created even if we do not call
+    init method - method will be called when the object is created
+    destroy method
+    scope
+        singleton(default)
+        prototype
+        request
+        session
+        global session
+
+    Bean Factory                                                        Application factory
+    it is an interface called as core container                         It is an interface called Advanced/EJB Container
+    Package org.springframework.beansfactory                            Package org.springframework.Context
+    Here we have have to create object for class path resource          No need to create class path object
+    It is lazy loading- object is created only when object is called    It is eager loading
+    It doesn't support annotation                                       Supports both xml and annotation
+
+Steps
+    Creating object
+    Value injection
+        Setter injection
+        Constructor injection
+    Dependency injection
+        Setter injection
+        Constructor injection
+        Method injection
+
+        Setter injection                                    Constructor injection
+It uses setters to inject values                        It uses constructor to inject values
+Here we use <property> tag                              Here we use <constructors-arg>
+    name:"",value:"",ref:""                                 index="",values="",ref=""
+First object is created and later values will be set    values will be set while creating the object
+Can be partially injected                               It is compulsory to inject all values
+
+Dependency injection
+    Externally injecting one class object into another class
+
+Annotation
+    One of the java types
+    

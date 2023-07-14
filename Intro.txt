@@ -1,0 +1,65 @@
+Roles and Responsibilities
+    Frontend Developer - HTML, CSS, JS
+    Backend Developer - Web server, Database, Architecture
+    Full Stack Developer - Planning, Architecture, Design, Development, Deployment, Maintenance
+
+  Webpages  vs               Websites                   vs      Webapp
+Single page     Collection of page under 1 domain name      Interactive/dynamic
+
+Developer tool
+    Console - Outputs JS logs & errors
+    Sources - All content rendered for current page
+    Network - Inspect the time & details of http request and response
+    Performance - What website/webapp is doing?
+    Memory - Shows memory being used
+    Elements - Structure of page
+
+IDE(Integrated Development Environment)
+    Software for building application
+
+    Features
+        Syntax highlighting
+        Error highlighting
+        Autocomplete
+        Intellisense
+        Refactoring - changing the structure of the code without changing functions
+
+Framework and libraries
+    Framework
+        Structure for developer to build web
+        Opinionated
+        Reduces time
+        Best practices
+    Libraries
+        Reusable piece of code that provide specific functionality.
+        Un Opinionated
+        Eg: email validation specifications - lot of standards
+
+Note: Program -> Process -> Threads
+
+APIs and Services
+    APIs(Application Programming Interface)
+        Developer friendly - easily accessible
+        Documented way - how to interact with code - Gateway
+        It is service application or interface offering advanced functionality with simple syntax
+        It is an set of function for creating application that access info of OS/applications
+        
+        API call
+        www.example.com/chat.mail/getMethod/v1
+                         model  | function | version
+
+        Types
+            Browser API - services - DOM APIs, Geolocation API
+            RestFul API - provides data
+            (Representational State Transfer)
+            Sensor based API - IOT(Internet OF Things)
+
+        API web servers - get post put delete
+        API end point - built into urls - when end point is hit, provides functionality
+        Extend ability - bridge between different component
+
+        Design
+            Naming
+            Parameter - designing I/O calls - expensive
+            Response object defining
+            Error defining

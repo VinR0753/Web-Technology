@@ -1,0 +1,176 @@
+Disadvantages of owning a server
+    Buying stack of server - Setup expensive
+    Monitoring and maintaining server - troubleshooting problems - conflicts with business goals
+    Varying traffic
+        High traffic? More server
+        Less traffic? Server idle
+
+Cloud CComputing(CC)
+    Cloud computing is on demand delivery of IT resources/services over the internet on a pay-as-you-go basis
+    IT resources
+        Computing power
+        Storage
+        Database
+        Machine Learning
+        Data analytics
+        IOT
+
+    Cloud providers - AWS, Azure, GCP, IBMcloud, etc
+
+    Uses
+        Data backup
+        Disaster recovery
+        Email
+        Virtual desktop
+        Software development and Testing
+        Big Data Analytics
+        Customer facing web application
+    
+    Advantages
+        Agile
+        Secure
+        Reduced cost
+        Scalability
+        Fault tolerant - highly available
+        Fast deployment
+        Variable expense
+        Access from anywhere
+        Deployment in multiple physical location
+    Note: Closer - reduced latency
+
+Cloud Service Models
+    SaaS(Software as a Service)
+        SaaS replaces  the traditional on-device software with software that is licenced on a subscription basis. It is centrally hosted in the cloud.
+        Most SaaS applications can be accessed directly from the web browser without any downloads or installation required. However, some SaaS application require plubin.
+        Example: Salesforce.com - CRM(Customer Relation Manager)
+        Advantages
+            Cost effective
+            Accessible
+            Reduced Time
+            Automatic update
+            Scalability
+    PaaS(Platform as a Service)
+        PaaS allows organizations to build, run and manage applications without the IT infrastructure. This makes easier and faster to develop,test and deploy applications.
+        No control over the underlying architecture.
+        Developers can focus on writing code and creating application without worrying about time-consuming IT infrastructure activities such as provisioning servers, storages and backup.
+        It can reduce your management overhead and lower your costs.
+        PaaS also makes it easier for you to innovate and scale your service on demand.
+        Advantages
+            Simple and convenient for user.
+            Cost-effective
+            Effectively managing the lifecycle.
+    IaaS(Infrastructure as a Service)
+        It is a self service model for managing remote datacenter infrastructures.
+        IaaS provides virtualized computing resources over the internet hosted by a third party such as AWS, GCP and Azure.
+        Instead of an organization purchasing hardware , companies purchase a consumption model.
+        IaaS enables companies to add, delete or reconfigure IT infrastructure on demand.
+        Advantages
+            Cost effective
+            Security
+            Maintenance
+
+
+            IaaS            PaaS            SaaS
+            
+            Data            Data            Data
+            Application     Application     
+            Runtime                         Application
+            Middleware      Runtime         Runtime
+            OS              Middleware      Middleware
+                            OS              OS
+            Virtualization  Virtualization  Virtualization
+            Server          Server          Server
+            Storage         Storage         Storage
+            Networking      Networking      Networking
+
+Cloud Deployment Models
+    Public cloud
+        Resources available for the general public under pay as you go model.
+    Private cloud
+        Resources managed and used by the organization
+    Community cloud
+        Resources shared by several organizations usually in the the same technology
+    Hybrid cloud
+        Partly managed by the service provider and partly by organizations
+    
+Virtualization
+    Virtual Machine
+        IN computing, a virtual machine is the virtualization/emulation of a computer system.
+        Virtual machines are based on computer architectures and provide functionality of a physical computer. Their implementation involve specialized hardware, software or combination of both.
+        Virtual machine allows you to run an OS in an application window on your desktop that behaves like a full separate computer.
+
+    Architecture
+        Everything necessary to run an app is contained within the virtual machine - the virtualized hardware, an OS, and any required binaries and libraries. therefore, virtual machine have their own infrastructure & are self contained.
+        Each VM is completely isolated from the host OS.
+        Also, it requires its own OS, which can be different from the host's OS. Each has its own binaries, libraries and applications.
+
+    Hypervisor
+        VMs run on top of a physical machine using a 'Hypervisor'.
+        The hypervisors themselves run on physical computers referred to as 'Host Machine'.
+        The host machine provides the VMs with resources including RAM & CPU.
+        The VM that is running on the host machine is also often called a 'Guest machines'
+
+    Advantages of VMs
+        Sharing of resources helps cost reduction.
+        Virtual machines are isolated from each other as they are physically separated.
+        Virtual machines encapsulate a complete computing environment.
+        Virtual machines run independently of underlying hardware.
+        Virtual machines can be migrated between different hosts.
+
+    Disadvantages of VMs
+        It can have a high cost of implementation.
+        It creates a security risk
+        It creates an availability issue
+        It creates a scalability issue
+        It requires several links in a chain that must work together cohesively.
+AWS
+    AWS is a broadly adopted cloud platform with widest database that offers several on demand services such as compute database and storage
+    Benefits of AWS
+        High security standards
+        Good availability
+        High performance
+        System integrators - APIs
+        Operational experience - Large community of customer across every industry.
+
+Accessing AWS service
+    Through AWS console
+        A simple web user interface to manage and view resources
+    Through AWS Command Line Interface(AWS CLI)
+        Unified tool to manage AWS services with just one tool to download.
+        Can control multiple AWS services from command line and automate them using scripts.
+    Through Software Development Kit(SDK)
+        SDKs simplify use of AWS services in our application with API's.
+
+AWS Architecture
+    AWS regions
+        An AWS region is a geographical area.
+        Each region contains multiple Availability Zones(AZs)
+        Each region is designed to be completely physically isolated from each other.
+        Connected by low latency, high throughput and highly redundant networking.
+
+    AWS Availability Zones
+        AZs are location into which one can launch resources such as Amazon EC2 instance.
+        AZs are physically separated and isolated from each other.
+
+Edge Computing
+    Future of cloud computing
+    Consists of edge nodes/locations - Computing and data storage close to source of data.
+    Great response time - saves bandwidth(max rate of data transfer across given path)
+
+Domains of AWS
+    Compute - ec2 - resizable compute capacity - clean slate
+    Elastic BeanStalk - Deploy Application - predefined libraries
+    Migration - Virtual migration
+              - Physical migration(Snowball)
+    Security Compliance - IAM(Identification & Authentication Management tool)
+                        - KMS - Create public and private keys
+    Storage - S3 - bucket_object
+    Cloud front - Content delivery network
+    Networking - VPC - Virtual network
+               - Direct Connect - least internet connection
+    Messaging - Cloud Trial
+              - OPS work
+    Databases: Aurora - SQL like - 5x faster
+                      - Dynamo - noSQL
+    Management tools - Cloud watch
+                     - Monitory Tool

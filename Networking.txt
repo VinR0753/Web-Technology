@@ -1,0 +1,519 @@
+How does internet works?
+
+Network
+Collection/System of interconnected devices that can exchange data and store, share resources with each other.
+These networking devices use a system of rules called Communication protocols io transmit information over physical or wireless technologies.
+
+Topologies
+    Bus
+        Consists of central line to which devices are connected.
+        Limitations
+            Any breakage to line breaks the network
+    
+    Ring
+        Every device is connected to adjacent device forming a Ring
+        Limitations
+            Damage to line breaks the network.
+            Lot of unnecessary calls being made.
+    
+    Star
+        All devices are connected to central device/hub
+        Limitations
+            If hub fails,the whole network fails
+    
+    Tree
+        Combination of bus and star Topologies
+        More fall tolerance
+    
+    Mesh
+        Every single computer is connected to every other computer
+        Limitations
+            Expensive
+            Scalability issue
+
+Types of Networks
+    PAN(Personal Area Network)
+        PAN is a computer network used for data transmission amongst devices such as computers, telephones, tablets and personal digital assistance.
+        Also known as HAN(Home Area Network)
+
+    LAN(Local Area Network)
+        LANs are widely used to connect computers, laptops & consumer electronics which enable them to share resources and exchange info when used by companies or organization
+        There are 2 different types of LAN
+            Wired LAN
+            Wireless LAN
+    
+    MAN(Metropolitan Area Network)
+        It connects and covers the whole city
+
+    WAN(Wide Area Network)
+        It spans over a large geographical area, often a country or continent
+    
+    GAN(Global Area Network)
+        Internet that connects globe using satellites.
+
+   What are Wireless Networks?
+            Networks that are not connected by cables.
+            Generally use radio waves to communicate
+            Advantages
+                Easy installation
+                Wider reach
+                Access and availability
+                Flexibility
+                Cost Saving
+
+    VPN(Virtual Private Network)
+        It is a private WAN which allows creation of secure tunnel (protected network) between different networks using the internet (public network).
+        By using VPN clients can connect to the organization remotely.
+        VPN encrypts the internet traffic and the online identity.
+        It keeps all the information secured against any potential threats.
+        Advantages
+            Secure network
+            Hides private information
+            Prevents data throttling!?      // ISP deliberately restricting internet bandwidth or speed 
+            Cost Effective Security
+            Scalability
+
+Structure of Network
+    OSI(Open System Interconnection) model
+
+                Application layer
+                    Implemented in software - Layer user interact with - on device                   
+                    
+                    Note: Program -> Process -> Threads
+
+                    Sockets
+                        Software - Interface between process and interface
+
+                    Ports
+                        IP address - devices
+                        port - application
+
+                        Ephemeral port - to which process within an application - randomly assigned
+                    
+                    Application layer protocols - http, ftp
+ 
+                Presentation layer
+                    Converts readable format to Machine language - translation
+                    Provides encoding, encryption, compression
+                    Note: UTF 8 - standard of encryption
+
+
+                Session layer
+                    Establish Connection
+                    Authentication - authorization
+                    End connection
+
+                Transport layer
+                    Transports data from and to application layer
+                    UDP - Connectionless  //transmitting data to the other without ensuring recipient is available or not
+                    Segmentation - Segments - contains source and destination port no. and a sequence number(to reassemble the segment in correct order)
+                    Flow control
+
+                Network layer
+                    Communicates with computer on another network
+                    logical addressing - IP address
+                    Packets - contains source and destination IP address
+                    Router lives here
+
+                Datalink layer
+                    Data Link Control sub-layer or Logical Link Control (LLC) sub-layer.
+                        Flow control
+                    MAC sub-layer
+                        Framing
+                        Physical addressing - MAC address
+                        Access control
+                        Error control
+                    Frames - contains source and destination MAC address
+                    MAC(Media access control) address - 12 digit alphanumeric number - different for different peripherals within a device.
+
+                Physical layer
+                    Guide - Unguided
+
+    TCP/IP Model(the internet protocol suite)
+        Internet protocol suite
+        5 Layers - OSI model with presentation and session layer merged into application layer
+
+                Application layer
+
+                Transport layer
+
+                Network layer
+
+                Datalink layer
+
+                Physical layer
+
+Hardware
+    Modem(Modulator demodulator)
+        Converts digital signal into analog signal.
+        Resides in Physical layer
+
+    Switches
+        Hardware devices used to connect multiple devices effectively.
+        Forwards data (packets) to and from other devices on network.
+        Basically multiport bridge
+        Uses MAC (Media Access Control) Address - 12 digit - Alphanumeric.
+        Resides in Datalink layer
+
+    Router
+        Routes the data packet based on IP address
+        Connects two or more packet switched networks
+        Resides  in Network layer
+
+    Gateway
+        Provides passage to connect network together working on different network model.
+        It allows user to send and receive data even if it is a LAN network 
+        Cant access the internet without a gateway
+        Advantages
+            Connects two networks which o different protocols
+            Provides Security
+        Disadvantages
+            Expensive
+            Data transmission rate is slower
+            Complex
+            Less intelligent
+
+Other devices
+    Repeater
+        Regenerates before signal becomes weak
+        Do not amplify
+
+    Hub
+        Multiport Repeater
+        Not intelligent
+        Types
+            Active Hubs
+                Clean, Boost, Relay
+                Own power supply
+            Passive Hubs
+                No cleaning, boosting
+                fetches power from  active hub
+    
+    Bridge
+        Present in Datalink layer
+        Type of repeater
+        Filter content based on MAC address
+
+Internet
+    Computer networks connected together
+
+    www(World wide Web) - way of sharing info using internet
+
+    Technologies
+        Sharing resources over network - ARPANET -ARPA(Advanced Research Project Agency)
+        Packet switching - NPL(National Physical Laboratory London)
+        TCP/IP - Vinton Cerf and Robert Kahn - DARPA
+        HTTP,HTML,URLs - Timothee Berners Lee - CERN
+        First search engine - Yahoo
+
+Internet Service Provider(ISP)
+    Tier I  TATA
+    Tier II Airtel, Jio
+
+
+                    ISP
+
+                Router              Global IP address
+
+        device1 device2 device3     Local IP address
+
+Internet Protocol
+    Generalized rules and regulation on data needs to be sent.
+    Set by Internet Society
+        changes - rfc - request for comment
+
+    IP Address
+        Unique number provided to each and every device
+        IPv4 -  4 Octet separated by dot(.)
+                length 32 bits(4*8)
+                range 0-255
+                integers
+                Connects 4 billion devices
+                Example: 192.321.21.2
+        IPv6 -  8 Octet separated by colon(:)
+                length 128 bits
+                range 128 bits(8*16)
+                hexadecimal
+                Connects 340 trillion devices
+                Example: 
+
+
+                            Command: ipconfig
+
+
+    IPv4 classes
+     IPv4 classes are differentiated based on the number of hosts it supports on the network.
+     There are 5 types of IPv4 classes and are based on 1st octet of IP Address.
+
+     IPv4 address       IPv4 short address          IPv4 end address         Usage
+        A               0.0.0.0                     127.255.255.255         large network
+        B               128:0.0.0                   191.255.255.255         Medium size network
+        C               192.0.0.0                   223.255.255.255         Local area network
+        D               224.0.0.0                   239.255.255.255         Reserved area network
+        E               240.0.0.0                   255.255.255.255         Study and R&D
+
+Note: Public IP are dynamic while Private IP are Static
+
+IP packets
+    Unit of data - consists of  1.Header(20-24 byte(8 byte for udp))
+                                        
+                                        Version   Length   Service Type   Packet Length
+                                        Identification                    DF  MF  Fragment offset
+                                        TIme to Live   Transport          Header Checksum
+                                                    Sender IP Address(32 bits)
+                                                    Destination IP Address(32 bits)
+                                        Options                           Padding
+                                
+                                2.Data/Payload(2^16-header size)
+                                
+Problem with IP packets transmission
+    May arrive out of order
+    Become corrupted
+    Dropped or lost during transmission
+
+To solve this we have
+    TCP(Transmission Control protocol)
+        Solves all 3 problems 
+        Small delay
+        Used  for text, images
+        Features
+            Connection oriented
+            Error Control
+            Congestion Control
+            Full Duplex
+
+    UDP(User Datagram Protocol)
+        Solves corrupted package issue - uses checksum
+        Very fast
+        Used for voicemail, video conference
+        DNS
+
+Other Protocols
+    DHCP(Dynamic Host CConfiguration Protocol)
+        Used to assign IP address to computer
+        Uses DHCP server
+
+    HTTP(Hyper Text Transfer Protocol)
+        Core operational protocol - used to communicate with web servers.
+        Uses TCP(Transfer layer)
+        Works on request response model
+        STATELESS(state is not saved on server - uses cookies)
+
+    HTTPs(Hyper Text Transfer Protocol secure)
+        Encrypted
+
+    DNS Protocol(Domain Name System Protocol)
+        Gives IP address of website from DNS server
+
+    IMAP(Internet Message Access Protocol)
+        Used to download emails and manage mailbox
+        Can be accessed through multiple server
+
+    SMTP(Simple Mail Transfer Protocol)
+        To send emails /also can receive
+
+    Post Office Protocol(POP)
+        Older protocol to download emails
+        Deletes mails from server once downloaded
+
+    FTP(File Transfer Protocol)
+        To transfer file to server
+        Send/receive/delete file on 
+        
+    SSH(Secure Shell Protocol)
+        To access/login/interact with server remotely
+        Data is encrypted
+
+    SFTP(SSH File Transfer Protocol)
+        Files/Data is transmitted securely
+
+    VNC(VIrtual network computing)
+        For graphical control
+    Telnet
+        Connect remote devices using telnet client - not secure
+        port 23
+
+Servers
+     Server is a main computer that fulfills the requests of other computer
+     Types of Servers
+        Application Server
+            Server dedicated to run certain software application. Example: WebLogic
+        Web Server
+            Stores – delivers the content for a website to client that requests. Example: Apache Tomcat
+        Database Server
+            Provides database services to other computers. Example: Oracle
+    Advantages
+        Speed
+        Automated backups
+        Security
+        Scalability
+        Seamless connectivity
+    Disadvantages
+        Single point of failure
+        Transition
+        Cost
+
+Server Scaling
+    Adjusting the computing power of servers
+    Usually to increase power by scaling done either by
+        By bigger machine - Vertical scaling
+        By more machine - Horizontal scaling
+
+    Vertical Scaling                    Horizontal Scaling
+    Load Balancing required             N/A
+    Resilient                           Single point of failure
+    Network calls(Remote Process Calls) Inter Process communication
+    Data is complicated to maintain     Data is consistent
+    Scales well                         Hardware limitation
+
+Client-Server Model/Architecture
+    Web server
+        Stores – delivers the content for a website to client that requests.
+        Present in Large datacentres connected to internet.
+        Communicates with browser using HTTP (Hyper Text Transfer Protocol)
+        Content - Static(HTML(Hyper Text Markup Language))
+                - Dynamic(Server side scripting language-Javascript,Java Server Page(JSP),PHP,Python)
+
+        Web acceleration
+            Cache content - Speedy delivery or commonly req content
+
+        Use case
+            Website storage and administration
+            Data storage
+            Security
+        ****Handle web requests
+        Example: Apache Tomcat
+
+    Web Browser
+        Software application – browse internet
+        Page rendering
+        
+    Browser engine
+        (layout engine/rendering engine)
+        core software component - transform html doc and other resources of a web into interactive visuals representation.
+        Example:Apple - webkit engine
+                Google - Blink engine
+                Microsoft - Trident/EdgeHTML
+                Mozilla - Gecko engine
+
+    URI-Uniform Resource Identifier
+        URL-Uniform Resource Locator
+            Identify resource by location
+            Syntax: http://www.example.com/index.html
+                Protocol|   Domain name  |   Path			
+        URN-Uniform Resource Name
+            Identify resource by name
+            Syntax: <URN> :: = "urn:" [NID] ":" [NSS]
+
+    Note:Hyper link: Link one clicks on web browser
+
+    HTTP(Hyper Text Transfer Protocol)
+        Core operational protocol - used to communicate with web servers.
+        Used to transfer web pages, images
+        STATELESS(state is not saved on server - uses cookies)
+        Uses TCP(Transfer layer)
+        Works on request response model
+
+        http Request Makeup
+            GET/path HTTP/1.1
+            Method|Path|Protocol|Version
+            Header
+            Host : developer.mozilla.org            //Host specifies the host of the server from where resources is required
+            User-Agent                              //Information about the web server of the application
+            Accept                                  //Type of content the client will accept as response.
+            Accept lang : en                        //language that client prefers
+            Content type :                          //Indicates the type of content being transmitted on request body
+
+            Methods
+                GET     retrieve information
+                POST    Send data
+                PUT     Update
+                DELETE  Remove
+
+            Version
+                1.1 & 2.0 widely used
+
+        http Response Makeup
+            http/1.1 200 OK
+            Status code|Status message
+            Header
+            Date : Sat, 01 Jan 2022 22:04:01 GMT                    //Specifies date and time http response was generated
+            Server : Apache/2.4.52(CentOS) ssl/2.8.31 OpenSSL/1.1   //Web server used to generate response
+            Last modified: Mon 01 Nov 2021 09:01:13 GMT             //Content last modified
+            Content Length:50                                       //length of response
+            Content Type:text/html                                  //type of resources returned
+            
+            Status code
+            Shows status of request - 100-599
+
+            Information     100-199
+                Provisional - Interim response
+                100 Continue            - to continue request or ignore the response
+                101 Switching Protocol  - the client has requested to server to switch protocols & the server has agreed to do so.
+            Successful      200-299
+                200 OK                  - depends on http method
+                                            get - found, included
+                                            post - successfully transmitted
+                                            put - successfully transmitted
+                                            delete - deleted
+                201 Created             - server successfully processed the request and a resource was created
+                202 Accepted            - the server accepted the request for processing but processing not yet completed
+                204 No Content          - the server accepted the request for processing but is not returning any content
+            Redirection     300-399
+                301 moved permanently   - all future request sent returned location
+                302 found               - temporary redirection
+            Client error    400-499
+                400 bad request
+                401 Unauthorized        - making the request is not authorized - should authenticate
+                403 Forbidden           - request valid web server refused/no permission
+                404 Not found           - requested resource not found
+                405 Method Not Allowed  - the web server does not support the http method used
+            Server error    500-599
+                500 Internal Server Error-Server failed to process request
+                502 Bad Gateway         - the web server received an invalid response from the application server
+                503 Service unavailable - web server cannot process the request
+
+    DNS(Domain Name System)
+        Used to find IP address of domain.
+        Directory - database service
+        Divided into various classes
+
+                    mail    .       google      .       com
+                sub domain | second level domain | top level domain
+        
+                        Root DNS server
+            .org           .com           .in           Top level domain 
+        student.org     google.com      amazon.in       Second level domain
+
+        ICANN(International Corporation for Assigned Name & Numbers)
+           Responsible for Internet Protocol (IP) address space allocation, protocol parameter assignment, domain name system (DNS) management and root server system management functions.
+
+                            command: dig google.com
+
+    Note: dig(domain information groper) - interrogates DNS server
+
+    Web Hosting
+        Service – hosting services - website files, secure storage
+
+    Hosting Options
+        Shared Hosting
+            Single Server – Multiple Website
+                Properties		
+                    Suitable for small websites
+                    Practice environment / Sand Box
+                    Free with limitation
+                    Slow performance
+        Virtual Private Hosting
+            Fixed recourses per VPS instance
+        Dedicated Hosting
+        Cloud Hosting
+            Combination of Physical and Virtual server
+                Properties
+                    No limitation			
+                    Higher cost
+                    Scalable
+
+Peer to Peer Architecture
+    No dedicated server
+    Scalable
+    decentralized
